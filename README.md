@@ -1,29 +1,52 @@
-Installation using Conda
-You need to have Python 3.9 or newer installed on your system.
+# Installation mit Conda
 
-Create a conda environment and activate it.
+Um ProtONT zu installieren, benötigen Sie Python 3.9 oder eine neuere Version auf Ihrem System.
 
+## 1. Erstellen und Aktivieren einer Conda-Umgebung
+
+Erstellen Sie eine Conda-Umgebung und aktivieren Sie sie:
+
+```bash
 conda create -n ProtONT
 conda activate ProtONT
-With git installed (recommended):
-Clone this repository using git clone https://github.com/Katuraschek/ProtONT.git and navigate there to install it in the newly created conda environment (use -e for editable):
+```
 
-pip -e install .
-After updates on the github, you can use the newest version of the code by running git pull in the cloned directory.
+## 2. Mit Git installieren (empfohlen)
 
-Without git installed:
-Directly install from github using
+Klonen Sie dieses Repository mit git clone https://github.com/Katuraschek/ProtONT.git und navigieren Sie dorthin, um es in der neu erstellten Conda-Umgebung zu installieren (verwenden Sie -e für editierbar):
 
+```bash
+pip install -e .
+```
+
+Nach Updates auf GitHub können Sie die neueste Version des Codes durch Ausführen von git pull im geklonten Verzeichnis verwenden.
+
+## 3. Ohne Git installieren
+
+Installieren Sie direkt von GitHub mit:
+
+```bash
 pip install git+https://github.com/Katuraschek/ProtONT.git#egg=ProtONT
-You can verify that devipep was installed by using conda list. To incorporate the newest changes from github you can run
+```
 
+Sie können überprüfen, ob ProtONT installiert wurde, indem Sie conda list verwenden. Um die neuesten Änderungen von GitHub zu übernehmen, können Sie Folgendes ausführen:
+
+```bash
 pip install -U --force-reinstall git+https://github.com/Katuraschek/ProtONT.git#egg=ProtONT
-This is less convenient as you have to reinstall the entire package from the conda prompt each time.
+```
 
-Then you can use the package from your conda environment, e.g. to run the example notebook demonotebook.ipynb. In order to run jupyter notebooks, you can install jupyter in your environment using
+Dies ist weniger bequem, da Sie jedes Mal das gesamte Paket aus der Conda-Eingabeaufforderung neu installieren müssen.
 
+## 4. Verwendung
+
+Sie können das Paket aus Ihrer Conda-Umgebung verwenden, z.B. um das Beispiel-Notebook demonotebook.ipynb auszuführen. Um Jupyter Notebooks auszuführen, können Sie Jupyter in Ihrer Umgebung installieren:
+
+```bash
 conda install jupyter
-Contact
-Katharina.Juraschek@childrens.harvard.edu.
+```
 
-Please use the Issues section for bug reports and feature requests.
+## Kontakt
+
+Für Fragen und Anregungen wenden Sie sich bitte an Katharina.Juraschek@childrens.harvard.edu.
+
+Bitte verwenden Sie den Abschnitt "Issues" für Fehlerberichte und Feature-Anfragen.
