@@ -1,52 +1,52 @@
-# Installation mit Conda
+# Installation using Conda
 
-Um ProtONT zu installieren, benötigen Sie Python 3.9 oder eine neuere Version auf Ihrem System.
+To install ProtONT, you need to have Python 3.9 or newer installed on your system.
 
-## 1. Erstellen und Aktivieren einer Conda-Umgebung
+## 1. Create and Activate a Conda Environment
 
-Erstellen Sie eine Conda-Umgebung und aktivieren Sie sie:
+Create a Conda environment and activate it:
 
 ```bash
 conda create -n ProtONT
 conda activate ProtONT
 ```
 
-## 2. Mit Git installieren (empfohlen)
+## 2. Install with Git (Recommended)
 
-Klonen Sie dieses Repository mit git clone https://github.com/Katuraschek/ProtONT.git und navigieren Sie dorthin, um es in der neu erstellten Conda-Umgebung zu installieren (verwenden Sie -e für editierbar):
+Clone this repository with git clone https://github.com/Katuraschek/ProtONT.git and navigate there to install it in the newly created Conda environment (use -e for editable):
 
 ```bash
 pip install -e .
 ```
 
-Nach Updates auf GitHub können Sie die neueste Version des Codes durch Ausführen von git pull im geklonten Verzeichnis verwenden.
+After updates on GitHub, you can use the newest version of the code by running git pull in the cloned directory.
 
-## 3. Ohne Git installieren
+## 3. Install without Git
 
-Installieren Sie direkt von GitHub mit:
+Install directly from GitHub with:
 
 ```bash
 pip install git+https://github.com/Katuraschek/ProtONT.git#egg=ProtONT
 ```
 
-Sie können überprüfen, ob ProtONT installiert wurde, indem Sie conda list verwenden. Um die neuesten Änderungen von GitHub zu übernehmen, können Sie Folgendes ausführen:
+You can verify that ProtONT was installed by using conda list. To incorporate the newest changes from GitHub, you can run:
 
 ```bash
 pip install -U --force-reinstall git+https://github.com/Katuraschek/ProtONT.git#egg=ProtONT
 ```
 
-Dies ist weniger bequem, da Sie jedes Mal das gesamte Paket aus der Conda-Eingabeaufforderung neu installieren müssen.
+This is less convenient as you have to reinstall the entire package from the Conda prompt each time.
 
-## 4. Verwendung
+## 4. Usage
 
-Sie können das Paket aus Ihrer Conda-Umgebung verwenden, z.B. um das Beispiel-Notebook demonotebook.ipynb auszuführen. Um Jupyter Notebooks auszuführen, können Sie Jupyter in Ihrer Umgebung installieren:
+You can use the package from your Conda environment, e.g., to run the example notebook demonotebook.ipynb. To run Jupyter Notebooks, you can install Jupyter in your environment using:
 
 ```bash
 conda install jupyter
 ```
 
-## Kontakt
+## Contact
 
-Für Fragen und Anregungen wenden Sie sich bitte an Katharina.Juraschek@childrens.harvard.edu.
+For questions and suggestions, please contact Katharina.Juraschek@childrens.harvard.edu.
 
-Bitte verwenden Sie den Abschnitt "Issues" für Fehlerberichte und Feature-Anfragen.
+Please use the "Issues" section for bug reports and feature requests.
