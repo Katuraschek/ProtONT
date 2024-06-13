@@ -45,6 +45,18 @@ You can use the package from your Conda environment, e.g., to run the example no
 conda install jupyter
 ```
 
+### 4.1 Data Input
+You can find example input in the folder example_input. Use the exact format and structure of the provided CSV and TSV files. 
+
+#### 4.1.1 meta.csv
+Use the meta.csv file to input your metadata. All headers starting with 'METAinfoX' can be customized according to your specific input. Other headers must remain unchanged. HOL (Hour of Life) requires specific hour int-values. DOL (Day of Life) requires exact int number of days. Keep 'RandomizationGroup' as a column, as it will be used for merging purposes. The column 'SampleIDalt2' should contain the names of the samples as provided in your protein file. Do not change the number of metadatacolumns.
+
+#### 4.1.2 report.pg_matrix.tsv
+This TSV file represents a typical output from protein sequencing. Maintain the structure of the TSV as demonstrated in this example file. The first five columns are reserved for general information. Ensure that the column 'Genes' is retained, as all calculations will reference the changes in LFQ from those chosen genes. Starting from the sixth column, the LFQ values of your samples are provided. You can add as many samples as necessary.
+
+#### 4.1.3 input.csv
+This file is a merged file from report.pg.matrix.tsv and meta.csv. The merging is based on the Sample names, which are provided in the headers of report.pg.matrix.tsv starting from the sixth column and in the column 'SampleIDalt2' of meta.csv. Ensure the correct Sample name is used. The code can match the Sample name from the metadata to the header of the protein file (e.g., if the Sample name in the metadata is 'Sample1' and in the protein file is 'C:/User/input/Sample1/output'). However, even small changes in the Sample names will affect the merging outcome ('Sample-1' and 'Sample_1' will not be merged). 
+
 ## Contact
 
 For questions and suggestions, please contact Katharina.Juraschek@childrens.harvard.edu.
