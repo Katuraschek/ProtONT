@@ -75,17 +75,16 @@ This file is a merged file from report.pg.matrix.tsv and meta.csv. The merging i
 #### 4.2 Output
 
 #### 4.2.1 LOESS curved for DOL change
-This is an example for a LOESS curve output for the gene's 'ANPEP' ontogeny, plotted over a period of 7 days.
+This is an example for a LOESS curve output for the gene's 'ANPEP' ontogeny, plotted over a period of 192 hours.
 ![Alternativer Text](ANPEP_LOESS-plot_example1.png)
 
 #### 4.2.2 LOESS curved for two factored DOL change
 This is an example for a LOESS curve output for the gene's 'ZNF263' ontogeny, plotted over a period of 7 days, when grouped into male and female groups for a second factor.
-![Alternativer Text](_proteins_volcano_plot_example3.png)
+![Alternativer Text](ZNF263_LOESS-2ndfactor-plot_example2.png)
 
 #### 4.2.3 Volcano plot for all genes
 This is an example for a volcano plot, showing the ontogeny differences of all genes and their p-value for significance. 
-![Alternativer Text](ZNF263_LOESS-2ndfactor-plot_example2.png)
-
+![Alternativer Text](_proteins_volcano_plot_example3.png)
 
 ### Contact
 
