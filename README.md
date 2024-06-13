@@ -3,13 +3,13 @@ ProtONT is a tool designed to visualize LFQ (Label-Free Quantification) protein 
 
 The tool offers the following features:
 
-Log2 transformation of data
-MinMax scaling of data for normalization
-Creation of volcano plots and output of significant genes
-Generation of LOESS plots for visualizing temporal trends
-Generation of LOESS plots with two factors to highlight differences (e.g., grouping changes based on gender over time)
-Calculation of significance between temporal changes for two factors
-Selection of specific time intervals
+- Log2 transformation of data
+- MinMax scaling of data for normalization
+- Creation of volcano plots and output of significant genes
+- Generation of LOESS plots for visualizing temporal trends
+- Generation of LOESS plots with two factors to highlight differences (e.g., grouping changes based on gender over time)
+- Calculation of significance between temporal changes for two factors
+- Selection of specific time intervals
 
 ProtONT (Protein Ontogeny) can be utilized to visualize the ontogeny of proteins.
 
