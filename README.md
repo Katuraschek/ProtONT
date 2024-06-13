@@ -72,6 +72,21 @@ This TSV file represents a typical output from protein sequencing. Maintain the 
 ##### 4.1.3 input.csv
 This file is a merged file from report.pg.matrix.tsv and meta.csv. The merging is based on the Sample names, which are provided in the headers of report.pg.matrix.tsv starting from the sixth column and in the column 'SampleIDalt2' of meta.csv. Ensure the correct Sample name is used. The code can match the Sample name from the metadata to the header of the protein file (e.g., if the Sample name in the metadata is 'Sample1' and in the protein file is 'C:/User/input/Sample1/output'). However, even small changes in the Sample names will affect the merging outcome ('Sample-1' and 'Sample_1' will not be merged). 
 
+#### 4.2 Output
+
+#### 4.2.1 LOESS curved for DOL change
+This is an example for a LOESS curve output for the gene's 'ANPEP' ontogeny, plotted over a period of 7 days.
+![Alternativer Text](ANPEP_LOESS-plot_example1.png)
+
+#### 4.2.2 LOESS curved for two factored DOL change
+This is an example for a LOESS curve output for the gene's 'ZNF263' ontogeny, plotted over a period of 7 days, when grouped into male and female groups for a second factor.
+![Alternativer Text](_proteins_volcano_plot_example3.png)
+
+#### 4.2.3 Volcano plot for all genes
+This is an example for a volcano plot, showing the ontogeny differences of all genes and their p-value for significance. 
+![Alternativer Text](ZNF263_LOESS-2ndfactor-plot_example2.png)
+
+
 ### Contact
 
 For questions and suggestions, please contact Katharina.Juraschek@childrens.harvard.edu.
